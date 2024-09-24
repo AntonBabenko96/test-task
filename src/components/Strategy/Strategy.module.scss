@@ -1,0 +1,52 @@
+@import "../../styles/colors.module.scss";
+
+.strategy {
+  font-family: Inter;
+  padding: 50px 0;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 40px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    padding-bottom: 25px;
+    border-bottom: 2px solid $border-color;
+  }
+
+  &__imgWrapper {
+    position: relative;
+  }
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 10.48px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.100000023841858px;
+    text-align: left;
+    margin-top: 25.5px;
+  }
+
+  &__subtitle {
+    font-size: 19.69px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 4px;
+    max-width: 280px;
+  }
+}

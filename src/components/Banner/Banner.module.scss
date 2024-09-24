@@ -1,0 +1,44 @@
+@import "../../styles/colors.module.scss";
+
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 24px 0;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 2px solid $semi-transparent-border-color;
+
+  &__logo {
+    margin-left: 130px;
+    height: 36px;
+    margin-right: 75px;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $light-text-color;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+    font-family: "Inter";
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+export const cardDataPrice = [
+  {
+    title: "Basic package",
+    price: "€XXXX",
+    period: "/month",
+    info: "Perfect for professionals and entrepreneurs looking to enhance their skills and knowledge.",
+    list: [
+      "6 new e-books per month",
+      "3 business consultations online with personal business manager",
+      "3 business skill tests",
+      "Exclusive expertise and insights from seasoned business specialists",
+      " 24/7 customer support",
+      "E-certificate",
+    ],
+    extra: "*Purchase now for just €X.XX and get a 3-day trial period",
+  },
+  {
+    title: "Advanced package",
+    price: "€XXXX",
+    period: "/month",
+    info: "Perfect for professionals and entrepreneurs looking to enhance their skills and knowledge.",
+    list: [
+      "6 new e-books per month",
+      "3 business consultations online with personal business manager",
+      "3 business skill tests",
+      "Exclusive expertise and insights from seasoned business specialists",
+      " 24/7 customer support",
+      "E-certificate",
+    ],
+    extra: "*Purchase now for just €X.XX and get a 3-day trial period",
+  },
+  {
+    title: "Premium package",
+    price: "€XXXXX",
+    period: "/month",
+    info: "Perfect for professionals and entrepreneurs looking to enhance their skills and knowledge.",
+    list: [
+      "6 new e-books per month",
+      "3 business consultations online with personal business manager",
+      "3 business skill tests",
+      "Exclusive expertise and insights from seasoned business specialists",
+      " 24/7 customer support",
+      "E-certificate",
+    ],
+    extra: "*Purchase now for just €X.XX and get a 3-day trial period",
+  },
+];

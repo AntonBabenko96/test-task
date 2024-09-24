@@ -1,0 +1,18 @@
+@import "../../../styles//colors.module.scss";
+
+.btn {
+  font-family: Inter;
+  font-size: 15.8px;
+  font-weight: 600;
+  line-height: 19.01px;
+  text-align: center;
+  padding: 22px 65px;
+  background-color: $background-btn-color;
+  color: $text-btn-color;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hovered-background-btn-color;
+  }
+}

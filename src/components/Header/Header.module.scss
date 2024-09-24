@@ -1,0 +1,60 @@
+@import "../../styles/colors.module.scss";
+
+.header {
+  background-color: $dark-background-color;
+  padding: 6px 20px 8px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 1;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &__left {
+      justify-content: flex-start;
+    }
+
+    &__right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::marker {
+      color: $semi-dark-text-color;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $semi-dark-text-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $hovered-semi-dark-text-color;
+    }
+  }
+}

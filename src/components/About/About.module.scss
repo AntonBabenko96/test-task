@@ -1,0 +1,22 @@
+@import "../../styles//colors.module.scss";
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  &__container {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__collapse {
+      width: 50%;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

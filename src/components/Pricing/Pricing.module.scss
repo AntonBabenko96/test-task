@@ -1,0 +1,82 @@
+@import "../../styles//colors.module.scss";
+
+.pricing {
+  background-color: $full-dark-background-color;
+  padding: 140px 170px;
+  color: $light-text-color;
+  font-family: Inter;
+  text-align: left;
+
+  &__header {
+    font-size: 49.25px;
+    font-weight: 500;
+    line-height: 66px;
+  }
+
+  &__cards {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 320px;
+    margin-top: 43px;
+    background-color: transparent;
+    border-top: 2px sold $light-text-color;
+    margin-right: 46px;
+
+    &__title {
+      margin-top: 51.5px;
+      font-size: 19.52px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    &__price {
+      margin-top: 20px;
+      font-size: 50.41px;
+      font-weight: 500;
+      line-height: 54px;
+      display: flex;
+    }
+
+    &__period {
+      margin-left: 10px;
+      margin-top: 5px;
+      font-size: 10.48px;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 1.100000023841858px;
+      text-transform: uppercase;
+    }
+
+    &__info {
+      margin-top: 22px;
+      line-height: 24px;
+    }
+
+    &__list {
+      margin-top: 30px;
+    }
+
+    &__item {
+      list-style: inside;
+      display: list-item;
+      text-indent: -20px;
+      padding-left: 20px;
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &__extra {
+      margin-top: 30px;
+      line-height: 24px;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+  }
+}
