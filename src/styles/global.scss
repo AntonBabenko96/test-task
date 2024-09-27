@@ -125,21 +125,18 @@ code {
 }
 
 .ant-collapse-content {
-  border: none;
+  border: none !important;
   font-family: Inter;
-  width: 425px;
-  margin: 23px 0;
+  max-width: 425px;
+
   font-size: 16.17px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
 
-  &-active {
-    border-top: none !important;
-  }
-
   &-box {
     padding: 0 !important;
+    margin: 23px 0;
   }
 }
 .ant-collapse-item {

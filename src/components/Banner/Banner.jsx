@@ -20,7 +20,7 @@ const Banner = () => {
             </a>
           </li>
           <li className={styles.banner__item}>
-            <a href="#startegy" className={styles.banner__link}>
+            <a href="#strategy" className={styles.banner__link}>
               Testimonials
             </a>
           </li>
