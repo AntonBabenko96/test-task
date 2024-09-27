@@ -1,10 +1,11 @@
 import styles from "./Pricing.module.scss";
 import Button from "../../shared/components/Button/Button";
 import { cardDataPrice } from "./data";
+import { Element } from "react-scroll";
 
 const Pricing = () => {
   return (
-    <div className={styles.pricing} id="pricing">
+    <Element className={styles.pricing} name="pricing">
       <h2 className={styles.pricing__header}>Pricing Plans</h2>
       <div className={styles.pricing__cards}>
         {cardDataPrice?.map((card, idx) => (
@@ -31,7 +32,7 @@ const Pricing = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Element>
   );
 };
 

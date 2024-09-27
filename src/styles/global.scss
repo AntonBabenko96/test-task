@@ -146,10 +146,6 @@ code {
   line-height: 66px;
   text-align: left;
 
-  &-active > .ant-collapse-header {
-    align-items: flex-end !important;
-  }
-
   &:last-child {
     border-radius: 0 !important;
   }

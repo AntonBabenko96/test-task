@@ -36,9 +36,30 @@
     line-height: 19px;
     font-weight: 500;
     font-family: "Inter";
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $light-text-color;
+      visibility: hidden;
+    }
 
     &:hover {
       opacity: 0.8;
+    }
+
+    &__active {
+      &::before {
+        visibility: visible;
+      }
     }
   }
 }

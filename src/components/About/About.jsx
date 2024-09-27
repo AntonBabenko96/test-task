@@ -1,5 +1,6 @@
 import styles from "./About.module.scss";
 import { Collapse } from "antd";
+import { Element } from "react-scroll";
 import about from "../../image/about.png";
 import { ReactComponent as BtnPlusIcon } from "../../image/svg/plus.svg";
 import { ReactComponent as BtnMinusIcon } from "../../image/svg/minus.svg";
@@ -7,7 +8,7 @@ import { myCategories } from "./data";
 
 const About = () => {
   return (
-    <div className={styles.about} id="about">
+    <Element name="about" className={styles.about}>
       <div className={styles.about__container}>
         <div className={styles.about___container__img}>
           <img src={about} alt="img" />
@@ -27,7 +28,7 @@ const About = () => {
           }}
         ></Collapse>
       </div>
-    </div>
+    </Element>
   );
 };
 

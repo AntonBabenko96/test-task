@@ -6,6 +6,7 @@ import styles from "./Hero.module.scss";
 import firsSlide from "../../image/firstSlide.png";
 import secondSlide from "../../image/secondSlide.png";
 import thirdSlide from "../../image/thirdSlide.png";
+import { Element } from "react-scroll";
 import { ReactComponent as RightArrow } from "../../image/svg/rightArrow.svg";
 import { ReactComponent as LeftArrow } from "../../image/svg/leftArrow.svg";
 
@@ -43,7 +44,7 @@ const Hero = () => {
   };
 
   return (
-    <div className={styles.hero} id="home">
+    <Element name="home" className={styles.hero}>
       <Carousel
         dots={false}
         className={styles.hero__slider}
@@ -100,7 +101,7 @@ const Hero = () => {
       <div className={styles.hero__banner}>
         <Banner />
       </div>
-    </div>
+    </Element>
   );
 };
 

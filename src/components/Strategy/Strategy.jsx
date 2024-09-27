@@ -3,6 +3,7 @@ import Modal from "../../shared/components/Modal/Modal";
 import { ReactComponent as BtnPlusIcon } from "../../image/svg/plus.svg";
 import { useState } from "react";
 import { strategyData } from "./data";
+import { Element } from "react-scroll";
 
 const Strategy = () => {
   const [visible, setVisible] = useState(false);
@@ -18,7 +19,8 @@ const Strategy = () => {
   };
 
   return (
-    <div className={styles.strategy} id="strategy">
+    <Element className={styles.strategy} name="strategy">
+      {" "}
       <ul className={styles.strategy__list}>
         {strategyData?.map((strategy) => (
           <li key={strategy.id} className={styles.strategy__item}>
@@ -53,7 +55,7 @@ const Strategy = () => {
           text={modalContent.text}
         />
       )}
-    </div>
+    </Element>
   );
 };
 
